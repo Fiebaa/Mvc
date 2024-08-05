@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muzi V Cernem</title>
+    <title>Muzi v Cernem</title>
     <style>
         body {
             margin: 0;
@@ -21,9 +21,16 @@
         .hero {
             width: 100%;
             height: 50vh;
-            background-image: url('IMG_9172.jpeg'); /* IMG_9172.jpegno Fügen Sie hier den Pfad zu Ihrem Bild ein */
+            background-image: url('IMG_9172.jpeg'); /* Fügen Sie hier den Pfad zu Ihrem Bild ein */
             background-size: cover;
             background-position: center;
+        }
+
+        .text-passage {
+            font-family: 'Garamond', serif;
+            font-size: 24px;
+            margin: 20px;
+            color: #ccc;
         }
 
         .search-container {
@@ -58,6 +65,12 @@
 </head>
 <body>
     <div class="hero"></div>
+    <div class="text-passage">
+        Muži v černém - Die geheimnisvollen Wächter von Kadan
+…ist eine fesselnde und abenteuerliche Geschichte über Mut, Freundschaft und den
+unerschütterlichen Willen, das Gute zu verteidigen. Die charmanten Charaktere und ihre
+spannenden Abenteuer machen dieses Hörbuch zu einem unvergesslichen Erlebnis.
+    </div>
     <div class="search-container">
         <input type="text" id="searchField" placeholder="Suche...">
         <button onclick="checkInput()">horbel me</button>
@@ -69,7 +82,7 @@
             if (searchValue === "horbel") {
                 alert("Genau richtig");
             } else {
-                alert("Anwenderfehler: Anscheinend bist du noch kein Mensch.");
+                alert("Anwenderfehler: Du bist wohl noch kein Mensch.");
             }
         }
     </script>
