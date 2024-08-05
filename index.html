@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men in Black Style Website</title>
+    <title>Muzi V Cernem</title>
     <style>
         body {
             margin: 0;
@@ -21,7 +21,7 @@
         .hero {
             width: 100%;
             height: 50vh;
-            background-image: url('IMG_9172.jpeg'); /* Fügen Sie hier den Pfad zu Ihrem Bild ein */
+            background-image: url('IMG_9172.jpeg'); /* IMG_9172.jpegno Fügen Sie hier den Pfad zu Ihrem Bild ein */
             background-size: cover;
             background-position: center;
         }
@@ -59,13 +59,18 @@
 <body>
     <div class="hero"></div>
     <div class="search-container">
-        <input type="text" placeholder="Suche...">
-        <button onclick="showError()">horbel me</button>
+        <input type="text" id="searchField" placeholder="Suche...">
+        <button onclick="checkInput()">horbel me</button>
     </div>
 
     <script>
-        function showError() {
-            alert("Fehler: Diese Funktion ist derzeit nicht verfügbar.");
+        function checkInput() {
+            var searchValue = document.getElementById("searchField").value.toLowerCase();
+            if (searchValue === "horbel") {
+                alert("Genau richtig");
+            } else {
+                alert("Anwenderfehler: Anscheinend bist du noch kein Mensch.");
+            }
         }
     </script>
 </body>
